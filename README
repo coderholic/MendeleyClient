@@ -4,3 +4,5 @@ Mendeley Open API Example Python Client
 For more details on the Mendeley Open API see http://www.mendeley.com/oapi/
 
 For more details on how to use the client see the usage example in the code
+
+Requires the oauth2 packge: http://github.com/simplegeo/python-oauth2
