@@ -83,7 +83,10 @@ class OAuthClient(object):
 
 	def request_token(self):
 		response = self.get(self.request_token_url).read()
-		token = oauth.Token.from_string(response)
+		try:
+			token = oauth.Token.from_string(response)
+		except ValueError:
+			raise Exception("Token not returned from server: %s" % response)
 		return token 
 	
 	def authorize(self, token, callback_url = "oob"):
