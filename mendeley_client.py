@@ -188,7 +188,7 @@ class MendeleyClient(object):
 			'optional': ['discipline', 'upandcoming'],
 		},
 		'publication_stats': {
-			'url': '/oapi/stats/authors/',
+			'url': '/oapi/stats/publications/',
 			'optional': ['discipline', 'upandcoming'],
 		},
 		'tag_stats': {
