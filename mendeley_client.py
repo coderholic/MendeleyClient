@@ -175,7 +175,7 @@ class MendeleyClient(object):
 			'optional': ['page', 'items'],
 		},
 		'authored': {
-			'url': '/oapi/documents/author/%(author)s/',
+			'url': '/oapi/documents/authored/%(author)s/',
 			'required': ['author'],
 			'optional': ['page', 'items'],
 		},
